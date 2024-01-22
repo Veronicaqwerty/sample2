@@ -9,10 +9,22 @@
     <nav class="coffee-navbar">
         <div class="logo">VERyWELL Coffee</div>
         <ul class="nav-list">
-            <li><a href="#">Veronica</a></li>
+            <li><a href="https://veronicaqwerty.github.io/veroresume/veronica/resume">Veronica</a></li>
             <li><a href="https://jimwelljan.github.io/Jim-Resume/Jimwell/">Jimwell</a></li>
         </ul>
     </nav>
+    <div class="box-container">
+        <a href="https://jimwelljan.github.io/Jim-Resume/Jimwell/" class="box-link">
+            <div class="box">
+                <img src="well.jpg" alt="Image 1">
+            </div>
+        </a>
+        <a href="https://veronicaqwerty.github.io/veroresume/veronica/resume" class="box-link">
+            <div class="box">
+                <img src="vero.jpg" alt="Image 2">
+            </div>
+        </a>
+    </div>
 </body>
 </html>
 <style type="text/css">
@@ -66,4 +78,30 @@
             color: #e8cda3;
             text-shadow: 0 0 10px #e8cda3;
         }
+        .box-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .box {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border: 2px solid #fff;
+        box-shadow: 0 10px 30px rgba(255, 255, 255, 0.7);
+        transition: box-shadow 0.3s ease;
+        margin-top: 200px;
+    }
+
+    .box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .box:hover {
+        box-shadow: 0 15px 40px rgb(184, 92, 34);
+    }
     </style>
